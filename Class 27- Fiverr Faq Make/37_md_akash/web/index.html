@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class-26</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="faq">
+  	   <div class="left-txt">
+  	   	<h2 style="color:#62646a;">Frequently Asked Questions</h2>
+  	   </div> <hr style="margin-top: 30px; width: 673px;">
+  	   <div class="btn">
+  	  <a class="a" href="#">+ Add FAQ</a>
+  	   </div>
+   
+ <div class="box_one">
+ 	<h5 style="margin-top: 30px;font-size: 18px;color:#62646a;">Add Questions &amp; Answers for Your Buyers.</h5>
+ 	<input type="text" name="">
+ 	<input type="text" name="">
+ 	<div class="box-btn">
+ 	  <button class="cencel"><h5 style="margin-top:-2px; margin-left: 8px;">cencel</h5> </button> 
+ 	  <button class="add"><h5  style="margin-top:-2px; margin-left: 8px;">ADD</h5></button></div>
+ </div>
+
+
+  </div>
+
+ <div class="hover_box">
+ 	<h1>What is FAQ</h1>
+ 	<p>Here you can add answers to the most commonly asked questions. Your FAQs will be displayed in your Gig page.</p>
+ 	<div class="other_box">
+ 		<h6>for example:</h6>
+ 		<span>Question:</span>
+ 		<p>Can you provide a British accent?</p>
+ 		<span>Answer:</span>
+ 		<p>Of course, I lived in England for 3 years! That won't be a problem.</p>
+ 	</div>
+ 	
+ </div>
+
+  
+  <div class="accoriain">
+  	  <button> <span><i style="float: right;margin-right: 20px;" class="fas fa-chevron-up akash kkk"></i></span></button>
+
+  	   <div class="inner">
+  	   	<input type="text" name="">
+  	   	<!-- <input type="text" name=""> --><textarea id="textbox"  onkeyup="charcountupdate(this.value)"></textarea><span style="float: right;margin-top: 130px; margin-left: -50px; position: absolute; z-index: 3;" id="charcount"></span>
+  	   	 <a href="">Delate</a>
+  	   	 <input type="submit"  style="background-color: green;" value="Update">
+  	   	 <input type="submit" value="Cencel">
+  	   	 
+  	   	 
+  	   </div>
+  	   <hr style="margin-top: 40px;">
+       <div class="out_btn">
+    	<input type="text" name="" value="Cencel">
+    	<input type="save" name="" value="Save">
+    </div>
+   
+
+
+
+  </div>
+    
+
+
+   <script src="js/jquery-3.6.0.min.js"></script>
+   
+ 
+<script>
+	$(".a").click(function (){
+		$(".a").hide();
+			$(".box_one").show();
+
+		});
+
+      $(".cencel").click(function (){
+			$(".box_one").hide();
+			$(".a").show();
+		});
+
+      $(".accoriain button").click(function (){
+			$(".inner").slideToggle(500);
+			
+		});
+    
+     $(".accoriain button").click(function (){
+			$(".accoriain button span .akash").toggleClass('kkk');
+			
+		});
+
+
+
+      
+        $(".add").click(function (){
+			$(".accoriain").show();
+			
+		});
+
+        $(".add").click(function (){
+			$(".box_one").hide();
+			
+		});
+
+
+
+       
+
+  //       $(".add").click(function (){
+		// 	$(".box_one").prepend("");
+			
+		// });
+
+
+
+
+
+
+
+
+
+
+
+      function charcountupdate(str) {
+        var lng = str.length;
+         document.getElementById("charcount").innerHTML  = lng + '/400';
+         
+      };
+
+
+
+
+
+//        $(document).ready(function(){
+//   $("p").click(function(){
+//     $(this).hide();
+//   });
+// });
+
+
+</script>
+
+
+
+</body>
+
+
+</body>
+</html>

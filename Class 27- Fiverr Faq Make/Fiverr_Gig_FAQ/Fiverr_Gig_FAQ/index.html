@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Gig FAQ section</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="FAQ_Section" style="margin-top: 100px;">
+            <div class="FAQ_Add_Section" style="display: flex; justify-content:space-between;">
+                <div>
+                    <h3 style="font-weight: 400;color: #62646a; font-size: 28px;">Frequentlty Asked Questions</h3>
+                </div>
+                <div>
+                    <button id="addFAQ">+Add FAQ</button>
+                </div>
+
+            </div>
+            <br>
+            <hr>
+            <div class="QAA-Section">
+                <p style="margin-top: 30px; margin-bottom: 10px; color: #222325;font-size: 20px;">Add Questions &
+                    Answers for your buyers</p>
+
+            </div>
+
+
+
+            <!--Acordian-->
+            <!--Some Change-->
+            <div id="acordian" style="margin-top: 30px; border: 1px solid gray; border-radius: 2px;">
+                <div>
+                    <div style="display: flex; overflow:hidden; background-color: white; border-bottom: 1px solid gray;" id="acordian_hideQestion">
+                        <div style="width: 5%; margin: 10px; margin-right: 0px;background-color: white;"">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div style="width: 80%; background-color: white; margin-top: 8px;">
+                            <h3 id="acordian_question" style="text-align: left;color: #62646A; background-color: white;">Your Questions</h3>
+                        </div>
+                        <div id="iconSHow"
+                            style="background-color: white; width: 10%; height: 20px; text-align: center; margin-right: 10px;margin-top: 10px;">
+                            <i class="fas fa-chevron-down"
+                                style="width: 100%; height: 100%; color: #62646A; font-size: 20px; background-color: white;"></i></div>
+                        <!--<span style="background-color: turquoise; margin-right: 40px;">></span>-->
+                        
+                    </div>
+                    <div id="acordian-hidesection">
+
+                        <div>
+                            <input id="acordian_question" class="editQuestion"
+                                style="border: 1px solid #95979D; margin: 20px;width: 90%;height: 25px;padding: 5px;padding-left: 10px;border-radius: 5px;background-color: white;"><br>
+                            <input id="acordian_answer" class="editAnswer"
+                                style="border: 1px solid #95979D; margin: 20px;width: 90%;height: 120px;padding: 5px;padding-left: 10px;border-radius: 5px; background-color: white;">
+
+                        </div>
+
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 20px;">
+
+                            <button style="border: none; font-size: 18px;padding-left: 20px;" id="delete"> <i
+                                    class="far fa-times-circle" style="margin-right: 10px;border-radius: 50%; color: white;background-color: gray; border: none;"></i>Delete</button>
+                            <div style="margin-right: 25px;">
+                                <button
+                                    style="padding: 10px 20px; margin-right: 10px;border-radius: 5px; font-size: 18px;border: 1px solid gray;">Cancel</button>
+                                <button
+                                    style="padding: 10px 20px; background-color: #19A463;color: white;border-radius: 5px;font-size: 18px;border: none;">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <!--Acordian End-->
+
+            <div id="FAQ_Answer" style="margin-top: 40px;">
+                <input type="text" placeholder="Add a Question: i.e. Do your translate to English as well?"
+                    id="question"
+                    style="background-color: white; height: 40px; border: 1px solid #95979D; border-radius: 5px; font-size: 18px; padding-left: 10px;">
+                <br>
+                <textarea placeholder="Add an Answer: i.e. Yes, I also translate from English to Hebrew." id="answer"
+                    style="background-color: white; height: 140px;border: 1px solid #95979D; border-radius: 5px; font-size: 18px; padding-left: 10px;padding-top: 10px;"></textarea>
+
+                <div style="text-align: right;">
+                    <button id="faqAnswerCancel"
+                        style="border: 1px solid gray; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">Cancel</button>
+                    <button id="addQuestion"
+                        style="border: none; padding: 10px 20px;border-radius: 5px; background-color: #19A463;color: white;font-size: 14px;">Add</button>
+                </div>
+
+            </div>
+
+
+            <br>
+            <hr style="margin-bottom: 20px;">
+
+            <div class="save_cancel-sction" style="display: flex; justify-content: space-between; margin-top: 50px;">
+                <button
+                    style="padding: 10px 20px; border-radius: 5px;border: 1px solid gray; font-size: 20px;" class="MainCancel">Cancel</button>
+                <button
+                    style="padding: 10px 20px; background-color: #19A463; border: none; border-radius: 5px;color: white;font-size: 20px;">Save</button>
+
+            </div>
+        </div>
+
+
+        <!--FAQ WHAT-->
+
+        <div style="width: 240px; padding: 20px; border-radius: 5px; background-color: #DEEFF0;" class="FAQ_WHAT">
+            <div style="width: 30px; height: 30px; background-color: #78CDD2;border-radius: 50%;" class="light"><i
+                    class="far fa-lightbulb"
+                    style="margin-left:8px;margin-top:8px;font-size: 18px;background-color: #78CDD2;color: white;"></i>
+            </div>
+            <div style="width: 20px; height: 20px; background-color: #DEEFF0;" class="leftIcon"></div>
+            <div style="background-color: #DEEFF0;">
+                <h2 style="background-color: #DEEFF0;">What are FAQS?</h2>
+                <br>
+                <p style="margin-bottom: 10px;text-align: justify; background-color: #DEEFF0;">Here you can add answers
+                    to the most commonly asked questions. Your FAQs will be displayed in your Gig page.</p>
+                <div style="border: 1px solid #78CDD2; padding: 10px; border-radius: 5px; background-color: #DEEFF0">
+                    <h4 style="background-color: #DEEFF0;color: #78CDD2; padding-bottom: 10px;">for example</h4>
+                    <p style="background-color: #DEEFF0;"><b style="background-color: #DEEFF0;">Questions:</b> Can you
+                        provide a British accent?</p>
+                    <p style="background-color: #DEEFF0;"><b style="background-color: #DEEFF0;">Answer: </b>of course, I
+                        lived in England for 3 years! That won't be a problem.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

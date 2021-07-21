@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  <meta http-equiv="refresh" content="2"> -->
+	<title>Class-27</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   
+   <div class="main">
+         <div class="mid">
+             <h2>Frequently Asked Questions</h2>
+             <a href="#">+ Add FAQ</a>
+             <hr>
+             <p>Add Questions & Answers for Your Buyers.</p>
+            <span>+ Add FAQ</span>
+                <div class="inner_mid">
+                    <input type="text" name=""placeholder="Add a Question e.i. What is Your Designation?">
+                    <textarea placeholder="Add an Answer e.i. Web Designer."></textarea>
+                    <button>Cancel</button>
+                    <button>Add</button>
+                   </div>
+                <div class="sec" style="position: relative;">
+                <input type="text" name=""style=" width: 100%;color: black; font-size: 18px; font-weight: bold; display: inline-block; " placeholder=" What is Your Designation?"><p style="font-size: 20px; font-weight: bold; margin-top: 5px; display: inline; margin-left: 150px;position: absolute;
+                top:14px; right: 150px;">^</p>
+
+                 <input type="text" name=""placeholder="Add a Question e.i. What is Your Designation?">
+                <textarea placeholder="Add an Answer e.i. Web Designer."></textarea>
+                <p style="display: inline-block; margin-left: 30px; color: gray;"> x Delete</p>
+                <button>Cancel</button>
+                <button>Update</button>
+
+            </div>
+
+            <hr>
+            <button>Cancel</button>
+            <button>Save</button>
+
+         </div>  	
+   </div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+   $('.mid a:nth-child(2)').click(function() {
+   $(".mid div:nth-child(6)").show();
+});
+    $('.mid a:nth-child(2)').click(function() {
+   $(this).hide();
+});
+    $('.mid a:nth-child(2)').click(function() {
+   $('.mid span:nth-child(5)'). css('display','none');
+});
+     $('.inner_mid button:nth-child(3)').click(function() {
+      $(".inner_mid").hide();
+  });
+    $('.inner_mid button:nth-child(4)').click(function() {
+      $(".mid div:nth-child(6)").hide();
+  });
+       $('.inner_mid button:nth-child(3)').click(function() {$(".mid a:nth-child(2)").show();
+  });
+
+   /* $('.inner_mid button:last-child').click(function() {
+   $('.mid'). append('<input type="text" name=""placeholder="What is Your Designation?">');
+});*/
+     $('.inner_mid button:last-child').click(function() {
+   $('.mid a:nth-child(2)').show();
+});
+    $('.inner_mid button:last-child').click(function() {
+   $(".sec").show();
+});
+    $('.sec button:nth-child(6)').click(function() {
+   $(".sec").hide();
+});
+</script>
+
+</body>
+</html>

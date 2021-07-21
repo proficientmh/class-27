@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #F7F7F7;
+}
+.main{
+    position: relative;
+}
+.FAQ_Section{
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+#addFAQ{
+    font-size: 18px;
+    color: #1dbf73;
+    border: none;
+}
+
+#addFAQ:hover {
+    text-decoration: underline;
+}
+
+#question{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+#FAQ_Answer{
+    display: none;
+}
+#answer{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#acordian{
+    display: none;
+   
+}
+#acordian-hidesection{
+    display: none;
+}
+#iconSHow{
+    transform: rotate(0deg);
+}
+
+.FAQ_WHAT{
+    position: absolute;
+    right:140px;
+    top: -18px;
+    display: none;
+}
+.light{
+    position: absolute;
+    top: -18px;
+    left:120px;
+}
+.leftIcon{
+    position: absolute;
+    left:-10px;
+    transform: rotate(45deg);
+}
+
+.MainCancel:hover{
+    color: rgb(37, 116, 37);
+    font-weight: bold;
+    
+}
